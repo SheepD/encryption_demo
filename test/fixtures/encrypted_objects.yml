@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  secret_stuff: MyString
+  secret_stuff2: MyString
+  tell_this_to_the_world: MyString
+
+two:
+  secret_stuff: MyString
+  secret_stuff2: MyString
+  tell_this_to_the_world: MyString

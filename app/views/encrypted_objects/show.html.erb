@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Secret stuff:</strong>
+  <%= @encrypted_object.secret_stuff %>
+</p>
+
+<p>
+  <strong>Secret stuff2:</strong>
+  <%= @encrypted_object.secret_stuff2 %>
+</p>
+
+<p>
+  <strong>Tell this to the world:</strong>
+  <%= @encrypted_object.tell_this_to_the_world %>
+</p>
+
+<%= link_to 'Edit', edit_encrypted_object_path(@encrypted_object) %> |
+<%= link_to 'Back', encrypted_objects_path %>

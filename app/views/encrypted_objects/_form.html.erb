@@ -1,0 +1,29 @@
+<%= form_for(@encrypted_object) do |f| %>
+  <% if @encrypted_object.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@encrypted_object.errors.count, "error") %> prohibited this encrypted_object from being saved:</h2>
+
+      <ul>
+      <% @encrypted_object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :secret_stuff %><br>
+    <%= f.text_field :secret_stuff %>
+  </div>
+  <div class="field">
+    <%= f.label :secret_stuff2 %><br>
+    <%= f.text_field :secret_stuff2 %>
+  </div>
+  <div class="field">
+    <%= f.label :tell_this_to_the_world %><br>
+    <%= f.text_field :tell_this_to_the_world %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
